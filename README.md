@@ -1,12 +1,6 @@
 # Kubernetes Client
 
-### Azure DevOps Build Status
-[![Build Status](https://dev.azure.com/laevenso/k8s/_apis/build/status/lachie83.k8s-kubectl)](https://dev.azure.com/laevenso/k8s/_build/latest?definitionId=1)
-
-### Container Details
-[![](https://images.microbadger.com/badges/image/lachlanevenson/k8s-kubectl.svg)](http://microbadger.com/images/lachlanevenson/k8s-kubectl "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/lachlanevenson/k8s-kubectl.svg)](http://microbadger.com/images/lachlanevenson/k8s-kubectl "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/commit/lachlanevenson/k8s-kubectl.svg)](http://microbadger.com/images/lachlanevenson/k8s-kubectl "Get your own commit badge on microbadger.com")
+Multiarch Build with Baseline from lachie83/k8s-kubectl 
 
 # Supported tags and respective `Dockerfile` links
 * `v1.20.2`, `latest`    [(v1.20.2/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.20.2/Dockerfile)
@@ -33,9 +27,6 @@
 
 ## Overview
 This container provides the Kubernetes client kubectl which can be used to interact with a Kubernetes cluster
-
-## Build
-`make docker_build`
 
 ## Run
 `docker run --rm lachlanevenson/k8s-kubectl:``git rev-parse --abbrev-ref HEAD`` --server=http://<server-name>:8080 get pods`
