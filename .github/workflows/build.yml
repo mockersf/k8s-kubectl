@@ -46,7 +46,7 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x
           push: true
-          tags: mockersf/k8s-kubectl:${{ steps.prepare.output.docker_tag }}
+          tags: mockersf/k8s-kubectl:${{ steps.prepare.outputs.docker_tag }}
           build-args: ${{ steps.prepare.outputs.buildx_args }}
 
       - name: Inspect
